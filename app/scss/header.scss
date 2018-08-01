@@ -1,0 +1,43 @@
+header, #portfolio {
+  @include wrapper;
+  color: $light;
+  text-align: center;
+  background-size: cover;
+  .menu__link{
+    color: $light;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .line{
+    border-bottom: 1px solid $light;
+  }
+}
+
+header {
+  background: url("../img/Background.jpg") no-repeat #6c7a7d;
+}
+
+.line {
+  line-height: 0;
+}
+
+.logo {
+  margin-top: 115px;
+  display: inline-block;
+  text-align: center;
+  .logo__image{
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .logo__title{
+    font-family: "nexa",sans-serif;
+    margin-top: 25px;
+    font-size: 48px;
+    text-align: center;
+    span{
+      font-weight: bold;
+    }
+  }
+}
+

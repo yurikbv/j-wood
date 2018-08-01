@@ -1,0 +1,52 @@
+#about-me,#contact {
+  @include wrapper;
+  text-align: center;
+  background-color: #fff;
+  .menu__link{
+    color: $accent;
+    &:hover {
+      color: $light;
+      text-shadow: 2px 2px 3px $accent;
+    }
+  }
+  .line {
+    border-bottom: 1px solid $accent;
+  }
+  .scroll__text{
+    color: $light;
+  }
+}
+
+.about-me {
+  margin-top: 60px;
+  @include row-flex;
+  justify-content: center;
+  .about-me__image {
+    @include col;
+    @include size(12);
+    @include size-sm(24);
+  }
+  .about-me__description{
+    text-align: left;
+    @include col;
+    @include size(10);
+    @include size-sm(24);
+  }
+}
+.about-me__title{
+  margin-top: 40px;
+  font-family: "nexa",sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.about-me__text {
+  margin-top: 40px;
+  line-height: 40px;
+}
+
+.about-me__author{
+  font-family: "FeltTipWoman",sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+}

@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("nexa", "../fonts/Nexa-Bold", bold);
+@include font-face("nexa", "../fonts/Nexa-Light", 300);
+@include font-face("Open Sans", "../fonts/open-sans-light", 300);
+@include font-face("FeltTipWoman", "../fonts/Felt_Tip_Woman");

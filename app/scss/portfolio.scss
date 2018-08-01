@@ -1,0 +1,33 @@
+#portfolio {
+  background: url("../img/Background-2.jpg") no-repeat #6c7a7d;
+  .scroll{
+    margin-top: 47px;
+  }
+}
+
+.portfolio__title{
+  font-family: "nexa",sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 55px 0 45px;
+  letter-spacing: 3px;
+}
+
+.portfolio {
+  @include row-flex;
+  justify-content: center;
+  .portfolio__item{
+    @include col;
+    @include size(4);
+    @include size-md(6);
+    @include size-sm(10);
+    @include size-xs(24);
+    transition: all 0.1s linear;
+    margin-bottom: 30px;
+    &:hover{
+      transform: scale(1.1);
+      transition: all 0.1s linear;
+    }
+  }
+}

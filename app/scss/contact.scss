@@ -1,0 +1,65 @@
+#contact {
+  .social__link{
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 2px solid $accent;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    display: inline-block;
+    margin: 0 8px;
+    transition: all 0.2s linear;
+    &:hover{
+      border: 2px solid rgba($accent,.7);
+      svg{
+        transition: all 0.3s linear;
+        transform: scale(1.3);
+        fill: blue;
+      }
+    }
+  }
+  svg{
+    display: block;
+  }
+}
+
+.mail__title,
+.phone__title,
+.social__title {
+  font-family: 'nexa',sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.mail {
+  margin-top: 150px;
+}
+
+.mail__text,.phone__text{
+  font-family: "nexa",sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.mail__text{
+  font-size: 48px;
+}
+
+.phone {
+  margin-top: 20px;
+}
+
+.phone__text{
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.social{
+  margin: 25px 0 60px;
+}
+
+.social__items{
+  margin-top: 20px;
+}
