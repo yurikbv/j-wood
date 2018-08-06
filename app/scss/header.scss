@@ -15,22 +15,28 @@ header, #portfolio {
 }
 
 header {
+  position: relative;
   background: url("../img/Background.jpg") no-repeat #6c7a7d;
 }
 
 .line {
   line-height: 0;
+  @include md-block{
+    display: none;
+  }
 }
 
 .logo {
-  margin-top: 115px;
-  display: inline-block;
+  outline: 1px solid green;
+  padding-top: 115px;
   text-align: center;
   .logo__image{
+    outline: 1px solid red;
     max-width: 380px;
     margin: 0 auto;
   }
   .logo__title{
+    outline: 1px solid red;
     font-family: "nexa",sans-serif;
     margin-top: 25px;
     font-size: 48px;

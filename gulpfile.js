@@ -1,4 +1,4 @@
-const gulp           = require('gulp'),
+const gulp         = require('gulp'),
 		gutil          = require('gulp-util' ),       //это вспомогательный модуль
 		sass           = require('gulp-sass'),        //SASS
 		browserSync    = require('browser-sync'),     //Синхронизация проекта и браузера
@@ -22,10 +22,11 @@ const sourcemaps = require('gulp-sourcemaps');        //Показывает в 
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js'
+		'app/js/common.js',
+		'app/js/modal-slide.js'
 		])
 	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 
@@ -76,7 +77,7 @@ gulp.task("sprite", function () {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 

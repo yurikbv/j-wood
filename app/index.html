@@ -23,17 +23,17 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="preload" href="fonts/Nexa-Light.ttf" as="font">
-	<link rel="preload" href="fonts/Nexa-Bold.ttf" as="font">
-	<link rel="preload" href="fonts/Felt_Tip_Woman.ttf" as="font">
-	<link rel="preload" href="fonts/open-sans-light.ttf" as="font">
+	<link rel="preload" href="fonts/Nexa-Light.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="fonts/Nexa-Bold.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="fonts/Felt_Tip_Woman.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="fonts/open-sans-light.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 
 <body>
   <header id="home">
-    <ul class="menu">
+    <ul class="menu menu__main menu__main--closed">
       <li class="menu__item menu__item--mobile">
-        <a class="menu__link menu__link--mobile">Menu <span class="icon__mobile icon__mobile--open"></span> </a>
+        <a href="" class="menu__link menu__link--mobile">Menu <span class="icon__mobile icon__mobile--open"></span> </a>
       </li>
       <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
       <li class="menu__item"><a href="#about-me" class="menu__link">About Me</a></li>
@@ -86,17 +86,21 @@
 			<div class="line"></div>
 			<h2 class="portfolio__title">Portfolio</h2>
 			<div class="portfolio">
-				<div class="portfolio__item"><a href=""><img src="img/01.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/02.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/03.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/04.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/05.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/06.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/07.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/08.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/09.jpg" alt="image"></a></div>
-				<div class="portfolio__item"><a href=""><img src="img/10.jpg" alt="image"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/01.jpg" alt="image" data-src="img/01-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/02.jpg" alt="image" data-src="img/02-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/03.jpg" alt="image" data-src="img/03-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/04.jpg" alt="image" data-src="img/04-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/05.jpg" alt="image" data-src="img/05-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/06.jpg" alt="image" data-src="img/06-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/07.jpg" alt="image" data-src="img/07-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/08.jpg" alt="image" data-src="img/08-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/09.jpg" alt="image" data-src="img/09-full.jpg"></a></div>
+				<div class="portfolio__item"><a href="" class="portfolio__link"><img src="img/10.jpg" alt="image" data-src="img/10-full.jpg"></a></div>
 			</div>
+      <div class="modal modal__fullscreen-image">
+        <img src="" alt="fullscreen-image" class="modal__picture">
+        <button class="modal__close"></button>
+      </div>
 			<div class="scroll">
 				<div class="scroll__text">do you want to see it with your own eyes? Scroll!</div>
 				<div class="scroll__image"><a href=""><img src="img/Double%20Arrow.png" alt=""></a></div>
@@ -166,6 +170,6 @@
       </div>
 		</section>
 	</main>
-	<!--<script src="js/scripts.min.js"></script>-->
+	<script src="js/scripts.min.js"></script>
 </body>
 </html>
