@@ -1,5 +1,8 @@
 .scroll {
   margin-top: 77px;
+  @include md(margin-top,45px);
+  @include sm(margin-top,25px);
+  @include md(margin-top,15px);
   .scroll__text{
     font-size: 14px;
     font-family: "nexa",sans-serif;

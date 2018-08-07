@@ -2,6 +2,7 @@
   background: url("../img/Background-2.jpg") no-repeat #6c7a7d;
   .scroll{
     margin-top: 47px;
+    @include sm(margin-top,20px);
   }
 }
 
@@ -11,6 +12,11 @@
   font-size: 50px;
   text-transform: uppercase;
   margin: 55px 0 45px;
+  @include md-block{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 36px;
+  }
   letter-spacing: 3px;
 }
 
@@ -28,6 +34,9 @@
     &:hover{
       transform: scale(1.1);
       transition: all 0.1s linear;
+    }
+    img{
+      display: inline-block;
     }
   }
 }

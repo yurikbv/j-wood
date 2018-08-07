@@ -31,10 +31,14 @@
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
+  @include sm(font-size,18px);
 }
 
 .mail {
   margin-top: 150px;
+  @include md(margin-top,80px);
+  @include sm(margin-top,50px);
+  @include xs(margin-top,30px);
 }
 
 .mail__text,.phone__text{
@@ -45,6 +49,9 @@
 
 .mail__text{
   font-size: 48px;
+  @include md(font-size,42px);
+  @include sm(font-size,36px);
+  @include xs(font-size,28px);
 }
 
 .phone {
@@ -54,6 +61,9 @@
 .phone__text{
   margin-top: 10px;
   font-size: 40px;
+  @include md(font-size,36px);
+  @include sm(font-size,30px);
+  @include xs(font-size,22px);
 }
 
 .social{

@@ -29,7 +29,7 @@
   .about-me__description{
     text-align: left;
     @include col;
-    @include size(10);
+    @include size(12);
     @include size-sm(24);
   }
 }
@@ -39,10 +39,20 @@
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  @include md-block{
+    margin-top: 20px;
+    font-size: 36px;
+  }
+  @include sm(font-size,32px);
+  @include xs(font-size,26px);
 }
 .about-me__text {
   margin-top: 40px;
   line-height: 40px;
+  @include md-block{
+    margin-top: 20px;
+    line-height: 25px;
+  }
 }
 
 .about-me__author{

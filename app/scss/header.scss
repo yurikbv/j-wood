@@ -1,8 +1,14 @@
+header {
+  position: relative;
+  background: url("../img/Background.jpg") no-repeat #6c7a7d;
+}
+
 header, #portfolio {
   @include wrapper;
   color: $light;
   text-align: center;
   background-size: cover;
+  @include md(background-size,auto 100%);
   .menu__link{
     color: $light;
     &:hover {
@@ -14,32 +20,31 @@ header, #portfolio {
   }
 }
 
-header {
-  position: relative;
-  background: url("../img/Background.jpg") no-repeat #6c7a7d;
-}
 
 .line {
   line-height: 0;
-  @include md-block{
-    display: none;
-  }
+  @include md(display,none);
 }
 
 .logo {
-  outline: 1px solid green;
   padding-top: 115px;
+  @include md(padding-top,80px);
+  @include sm(padding-top,50px);
+  @include xs(padding-top,20px);
   text-align: center;
   .logo__image{
-    outline: 1px solid red;
     max-width: 380px;
     margin: 0 auto;
   }
   .logo__title{
-    outline: 1px solid red;
     font-family: "nexa",sans-serif;
     margin-top: 25px;
     font-size: 48px;
+    @include sm-block{
+      margin-top: 15px;
+      font-size: 40px;
+    }
+    @include xs(font-size,28px);
     text-align: center;
     span{
       font-weight: bold;

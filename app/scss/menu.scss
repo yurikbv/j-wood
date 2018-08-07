@@ -65,6 +65,7 @@
   text-decoration: none;
   font-family: "nexa",sans-serif;
   font-weight: 300;
+  @include sm(padding,20px);
   &:hover {
     transition: all .2s linear;
   }
@@ -74,6 +75,9 @@
 .menu__link--mobile{
   position: relative;
   padding: 15px 60px 15px 20px;
+  @include sm(padding,15px 60px 15px 20px);
+  @include xs-block{
+  }
   transition: all 0.1s linear;
   &:hover{
     .icon__mobile{
